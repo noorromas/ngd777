@@ -10,7 +10,6 @@ $(`<center>
   --shadow:rgba(0,0,0,.1);
 }
 
-/* عنوان الاشتراكات */
 #design-a{
   width:99.5%;
   margin:0 auto;
@@ -33,7 +32,6 @@ $(`<center>
   background:#fff6e5;
 }
 
-/* محتوى الاشتراكات */
 #spanan{
   display:none;
   text-align:right;
