@@ -1,147 +1,159 @@
 
-
 $(`<center>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
+/* لوحة ألوان جديدة */
 :root{
-  --gold:#d4af37;
-  --bg:#eeeeee;
-  --row:#ffffff;
-  --stroke:#cccccc;
-  --txt:#222222;
-  --radius:12px;
-  --shadow:0 6px 14px rgba(0,0,0,.25);
+  --primary:#0075ff;     /* أزرق رئيسي */
+  --primary-dark:#0047b3; /* أزرق داكن */
+  --bg:#0d1117;          /* خلفية داكنة */
+  --card:#161b22;        /* خلفية البطاقة */
+  --stroke:#2d333b;      /* حدود ناعمة */
+  --txt:#e6edf3;         /* نص فاتح */
+  --accent:#d4af37;      /* ذهبي للسعر */
+  --radius:14px;
 }
 
-body{background:#000;margin:0}
+body{background:#000;margin:0;font-family:'Tajawal',sans-serif}
 
-#subs-slim{
+#subs-alt{
   width:100%;
-  max-width:none;
+  max-width:480px;
   margin:0 auto;
-  font-family:'Tajawal',sans-serif;
   color:var(--txt);
   background:var(--bg);
   border:1px solid var(--stroke);
-  border-radius:0;
-  box-shadow:none;
+  border-radius:var(--radius);
+  overflow:hidden;
   direction:rtl;
+  box-shadow:0 8px 20px rgba(0,0,0,.45);
+}
+
+/* رأس الصندوق */
+#alt-head{
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  text-align:center;
+  font-size:16px;
+  font-weight:700;
+  padding:14px;
+  cursor:pointer;
+  user-select:none;
+  letter-spacing:.5px;
+  position:relative;
   overflow:hidden;
 }
-
-@keyframes pulse{
-  0%,100%{text-shadow:0 0 5px rgba(212,175,55,.7),0 0 10px rgba(212,175,55,.4)}
-  50%   {text-shadow:0 0 2px rgba(212,175,55,.3),0 0 4px rgba(212,175,55,.3)}
+#alt-head::after{           /* وميض خفيف عند التحويم */
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.15) 50%,transparent 100%);
+  transform:translateX(-100%);
+  transition:transform .6s;
 }
-#slim-head{
-  background:linear-gradient(135deg,#2d2d2d,#000);
-  color:var(--gold);
-  text-align:center;
-  font-size:16px;   /* 18px → 16px //-edited */
-  font-weight:700;
-  padding:16px;
-  cursor:pointer;
-  animation:pulse 2.5s infinite alternate;
-}
+#alt-head:hover::after{transform:translateX(100%)}
 
-#slim-body{
+/* جسم الصندوق */
+#alt-body{
   display:none;
-  padding:18px 16px 24px;
+  padding:22px 18px 28px;
   opacity:0;
   transition:opacity .4s;
 }
-#slim-body.show{opacity:1}
+#alt-body.show{opacity:1}
 
-.item{
+/* البطاقة */
+.alt-item{
   display:flex;
   align-items:center;
-  gap:10px;
-  background:var(--row);
+  gap:12px;
+  background:var(--card);
   border:1px solid var(--stroke);
   border-radius:var(--radius);
-  padding:8px 10px;
-  margin-bottom:10px;
-  font-size:12px;  /* 14px → 12px //-edited */
-  opacity:0;
-  transform:translateY(10px);
-  transition:all .35s;
+  padding:10px 12px;
+  margin-bottom:12px;
+  font-size:13px;
+  position:relative;
+  transition:transform .35s,box-shadow .35s;
 }
-.show .item{opacity:1;transform:none}
-.item:hover{transform:scale(1.02);box-shadow:0 0 10px rgba(212,175,55,.35)}
+.alt-item:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 14px rgba(0,117,255,.35);
+}
 
-.badge{
-  flex:0 0 30px;
-  height:30px;
-  background:var(--gold);
-  color:#000;
+.alt-img{width:28px;height:28px;object-fit:contain;border-radius:50%}
+.alt-num{
+  flex:0 0 32px;
+  height:32px;
+  background:var(--primary);
+  color:#fff;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:10px;  /* 12px → 10px //-edited */
   font-weight:700;
+  font-size:11px;
 }
-.name{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.price{color:var(--gold);font-weight:700;font-size:11px}  /* 13px → 11px //-edited */
-.item img{width:24px;height:24px;object-fit:contain}
+.alt-name{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.alt-price{color:var(--accent);font-weight:700;font-size:12px}
 
-.contact{
+/* أزرار التواصل */
+.alt-link{
   display:block;
-  margin:14px auto 0;
-  background:var(--gold);
-  color:#000!important;
-  padding:10px 32px;
-  border-radius:24px;
+  margin:18px auto 0;
+  background:var(--primary);
+  color:#fff!important;
+  padding:12px 34px;
+  border-radius:30px;
   font-weight:700;
-  font-size:12px;  /* 14px → 12px //-edited */
+  font-size:13px;
   text-decoration:none;
   position:relative;
   overflow:hidden;
   transition:transform .25s,box-shadow .25s;
 }
-.contact::after{
+.alt-link::before{
   content:'';
   position:absolute;
-  top:0;left:-100%;
-  width:70%;height:100%;
-  background:linear-gradient(120deg,transparent 0%,rgba(255,255,255,.55) 50%,transparent 100%);
-  transform:skewX(-20deg);
-  transition:left .45s;
+  inset:0;
+  background:linear-gradient(120deg,transparent 0%,rgba(255,255,255,.4) 50%,transparent 100%);
+  transform:translateX(-100%) skewX(-20deg);
+  transition:transform .5s;
 }
-.contact:hover{transform:translateY(-3px);box-shadow:0 0 12px rgba(212,175,55,.55)}
-.contact:hover::after{left:130%}
+.alt-link:hover{transform:translateY(-3px);box-shadow:0 0 12px rgba(0,117,255,.55)}
+.alt-link:hover::before{transform:translateX(130%) skewX(-20deg)}
 </style>
 
-<div id="subs-slim">
-  <div id="slim-head">اشتركات شات نجد – اضغط للعرض</div>
+<div id="subs-alt">
+  <div id="alt-head">اشتركات شات نجد – اضغط للعرض</div>
 
-  <div id="slim-body">
-    <div class="item"><span class="badge">1</span><span class="name">ادمن كامل الصلاحيات + ( درع اسود هديه مدة شهر )</span><span class="price">500 ر.س</span><img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"></div>
-    <div class="item"><span class="badge">2</span><span class="name">ادمن اسود + ( ادمن تميز نجد هديه لمدة شهر )</span><span class="price">350 ر.س</span><img src="https://www.njd.chat/sico/zvqhLTljtX.gif"></div>
-    <div class="item"><span class="badge">3</span><span class="name">ادمن تميز نجد + ( تاج ذهبي هديه لمدة شهر )</span><span class="price">200 ر.س</span><img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"></div>
-    <div class="item"><span class="badge">4</span><span class="name">تاج ذهبي +  ( 3 نجمات ذهبيه لمدة شهر )</span><span class="price">150 ر.س</span><img src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"></div>
-    <div class="item"><span class="badge">5</span><span class="name">تاج اسود +  ( 5 نجمات اسود هديه لمدة شهر )</span><span class="price">150 ر.س</span><img src="https://www.njd.chat/sico/z1c81hkk2r10.gif"></div>
-    <div class="item"><span class="badge">6</span><span class="name">وكل اشتراك له روم صوتي خاص هديه من اداره الموقع</span><span class="price">هدية</span><img src="https://www.njd.chat/sico/z7tbj5tzEs.gif"></div>
-    <div class="item"><span class="badge">7</span><span class="name">ومن اراد بنر لـ اسمه مع التصميم ولمدة شهرين</span><span class="price">100 ر.س</span><img src="https://www.njd.chat/sico/zs0F1tqr8G.gif"></div>
+  <div id="alt-body">
+    <div class="alt-item"><span class="alt-num">1</span><span class="alt-name">ادمن كامل الصلاحيات + ( درع اسود هديه مدة شهر )</span><span class="alt-price">500 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/zvCFi1N2kj.gif"></div>
+    <div class="alt-item"><span class="alt-num">2</span><span class="alt-name">ادمن اسود + ( ادمن تميز نجد هديه لمدة شهر )</span><span class="alt-price">350 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/zvqhLTljtX.gif"></div>
+    <div class="alt-item"><span class="alt-num">3</span><span class="alt-name">ادمن تميز نجد + ( تاج ذهبي هديه لمدة شهر )</span><span class="alt-price">200 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/zsjUnTM2vK.gif"></div>
+    <div class="alt-item"><span class="alt-num">4</span><span class="alt-name">تاج ذهبي +  ( 3 نجمات ذهبيه لمدة شهر )</span><span class="alt-price">150 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"></div>
+    <div class="alt-item"><span class="alt-num">5</span><span class="alt-name">تاج اسود +  ( 5 نجمات اسود هديه لمدة شهر )</span><span class="alt-price">150 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/z1c81hkk2r10.gif"></div>
+    <div class="alt-item"><span class="alt-num">6</span><span class="alt-name">وكل اشتراك له روم صوتي خاص هديه من اداره الموقع</span><span class="alt-price">هدية</span><img class="alt-img" src="https://www.njd.chat/sico/z7tbj5tzEs.gif"></div>
+    <div class="alt-item"><span class="alt-num">7</span><span class="alt-name">ومن اراد بنر لـ اسمه مع التصميم ولمدة شهرين</span><span class="alt-price">100 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/zs0F1tqr8G.gif"></div>
 
-    <a class="contact" target="_blank"
+    <a class="alt-link" target="_blank"
        href="https://raw.githack.com/noorromas/njd.chat/main/index.html">تواصل مع الادارة اضغط هنا</a>
-    <a class="contact" target="_blank"
+    <a class="alt-link" target="_blank"
        href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">تواصل مع المصمم اضغط هنا</a>
   </div>
 </div>
 
 </center>`).insertBefore('#d2');
 
-$("#slim-head").on("click", function(){
-  const body=$("#slim-body");
+/* تبديل الإظهار */
+$("#alt-head").on("click", function(){
+  const body=$("#alt-body");
   body.stop(true,true);
   if(body.is(":visible")){
-    body.slideUp(220, ()=> body.removeClass("show"));
+    body.slideUp(240, ()=> body.removeClass("show"));
   }else{
-    body.slideDown(220, ()=> body.addClass("show"));
+    body.slideDown(240, ()=> body.addClass("show"));
   }
 });
 
