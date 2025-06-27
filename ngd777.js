@@ -4,83 +4,120 @@ $(`<center>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
-/* لوح الألوان */
+/* ألوان وضبط عام */
 :root{
-  --accent:#d4af37;      /* ذهبي هادئ */
+  --accent:#4f46e5;     /* بنفسجي هادي */
   --bg:#ffffff;
-  --border:#e4e4e4;
-  --text:#222;
-  --radius:12px;
+  --border:#e8e8e8;
+  --text:#232323;
 }
 
-/* أساسيات */
 body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
-#subs-m{width:100%;max-width:280px;margin:0 auto;background:var(--bg);color:var(--text);
-        border:1px solid var(--border);border-radius:var(--radius);direction:rtl;overflow:hidden}
 
-/* رأس مصغّر بتدرّج خفيف */
-#sm-head{
-  background:linear-gradient(135deg,var(--accent) 0%,#b79a2f 100%);
-  color:#000;text-align:center;font-size:12px;font-weight:700;padding:9px 6px;
-  cursor:pointer;user-select:none;letter-spacing:.3px
+/* الحاوية */
+#subs-clean{
+  width:100%;
+  max-width:300px;      /* مناسب للجوال */
+  margin:0 auto;
+  background:var(--bg);
+  color:var(--text);
+  border:1px solid var(--border);
+  direction:rtl;
+  overflow:hidden;
+  font-size:11px;       /* خط صغير */
+  line-height:1.55;
 }
 
-/* جسم القائمة */
-#sm-body{display:none;opacity:0;transition:opacity .25s;padding:12px 10px 14px;line-height:1.55}
-#sm-body.show{opacity:1}
+/* رأس قابل للطي */
+#clean-head{
+  background:var(--accent);
+  color:#fff;
+  text-align:center;
+  font-weight:700;
+  padding:9px 6px;
+  cursor:pointer;
+  user-select:none;
+}
+
+/* الجسم */
+#clean-body{
+  display:none;
+  opacity:0;
+  transition:opacity .25s;
+  padding:12px 10px 14px;
+}
+#clean-body.show{opacity:1}
 
 /* كل سطر */
-.row{
-  display:flex;align-items:center;gap:6px;font-size:11px;border-bottom:1px dotted var(--border);
-  padding:5px 0
+.entry{
+  display:flex;
+  align-items:center;
+  padding:5px 0;
+  border-bottom:1px solid var(--border);
 }
-.row:last-child{border:none}
+.entry:last-child{border:none}
 
-/* الصورة */
-.row img{width:18px;height:18px;border-radius:4px;object-fit:contain}
+/* شريط جانبي رفيع للتزيين */
+.entry::before{
+  content:'';
+  width:3px;height:100%;
+  background:var(--accent);
+  border-radius:3px;
+  margin-left:6px;
+}
+
+/* الأيقونة */
+.entry img{
+  width:18px;height:18px;
+  margin-left:6px;
+  border-radius:3px;
+  object-fit:contain;
+}
 
 /* الرقم والسعر */
-.num{color:var(--accent);font-weight:700;margin-left:3px;font-size:10px}
-.price{color:var(--accent);font-weight:700;margin-right:3px;font-size:10px}
+.num{font-weight:700;color:var(--accent);margin-left:3px}
+.price{font-weight:700;color:var(--accent);margin-right:3px;font-size:10px}
 
-/* زرّ تواصل */
-.btn{
-  display:block;margin:9px auto 0;background:var(--accent);color:#000!important;
-  font-size:11px;font-weight:700;padding:7px 18px;border-radius:18px;text-decoration:none;
-  width:90%;text-align:center
+/* زر تواصل */
+.cta{
+  display:block;
+  margin:10px auto 0;
+  width:92%;
+  background:var(--accent);
+  color:#fff!important;
+  text-align:center;
+  font-weight:700;
+  padding:7px 0;
+  border-radius:18px;
+  font-size:11px;
+  text-decoration:none;
 }
-.btn:hover{filter:brightness(.92)}
-
-/* تحسين إضافي لشاشات أكبر */
-@media(min-width:400px){
-  #sm-head{font-size:13px;padding:10px 8px}
-  .row{font-size:12px}
-  .num,.price{font-size:11px}
-}
+.cta:hover{filter:brightness(.9)}
 </style>
 
-<div id="subs-m">
-  <div id="sm-head">اشتركات شات نجد – اضغط للعرض</div>
+<div id="subs-clean">
+  <div id="clean-head">اشتركات شات نجد – اضغط للعرض</div>
 
-  <div id="sm-body">
-    <div class="row"><img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"><span class="num">1.</span> أدمن كامل الصلاحيات + (درع أسود شهر) <span class="price">— 500 ر.س</span></div>
-    <div class="row"><img src="https://www.njd.chat/sico/zvqhLTljtX.gif"><span class="num">2.</span> أدمن أسود + (أدمن تميز نجد شهر) <span class="price">— 350 ر.س</span></div>
-    <div class="row"><img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"><span class="num">3.</span> أدمن تميز نجد + (تاج ذهبي شهر) <span class="price">— 200 ر.س</span></div>
-    <div class="row"><img src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"><span class="num">4.</span> تاج ذهبي + (3 نجمات شهر) <span class="price">— 150 ر.س</span></div>
-    <div class="row"><img src="https://www.njd.chat/sico/z1c81hkk2r10.gif"><span class="num">5.</span> تاج أسود + (5 نجمات شهر) <span class="price">— 150 ر.س</span></div>
-    <div class="row"><img src="https://www.njd.chat/sico/z7tbj5tzEs.gif"><span class="num">6.</span> لكل اشتراك روم صوتي مجانًا <span class="price">— هدية</span></div>
-    <div class="row"><img src="https://www.njd.chat/sico/zs0F1tqr8G.gif"><span class="num">7.</span> بنر للاسم مع تصميم (شهرين) <span class="price">— 100 ر.س</span></div>
+  <div id="clean-body">
 
-    <a class="btn" target="_blank" href="https://raw.githack.com/noorromas/njd.chat/main/index.html">تواصل مع الإدارة</a>
-    <a class="btn" target="_blank" href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">تواصل مع المصمم</a>
+    <div class="entry"><img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"><span class="num">1.</span> أدمن كامل الصلاحيات + (درع أسود شهر) <span class="price">— 500 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/zvqhLTljtX.gif"><span class="num">2.</span> أدمن أسود + (أدمن تميز نجد شهر) <span class="price">— 350 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"><span class="num">3.</span> أدمن تميز نجد + (تاج ذهبي شهر) <span class="price">— 200 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"><span class="num">4.</span> تاج ذهبي + (3 نجمات شهر) <span class="price">— 150 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/z1c81hkk2r10.gif"><span class="num">5.</span> تاج أسود + (5 نجمات شهر) <span class="price">— 150 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/z7tbj5tzEs.gif"><span class="num">6.</span> لكل اشتراك روم صوتي مجانًا <span class="price">— هدية</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/zs0F1tqr8G.gif"><span class="num">7.</span> بنر للاسم مع تصميم (شهرين) <span class="price">— 100 ر.س</span></div>
+
+    <a class="cta" target="_blank" href="https://raw.githack.com/noorromas/njd.chat/main/index.html">تواصل مع الإدارة</a>
+    <a class="cta" target="_blank" href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">تواصل مع المصمم</a>
   </div>
 </div>
 
 </center>`).insertBefore('#d2');
 
-/* تحكّم الفتح/الإغلاق */
-$("#sm-head").on("click",function(){
-  const b=$("#sm-body");
+/* تشغيل فتح/إغلاق */
+$("#clean-head").on("click",function(){
+  const b=$("#clean-body");
   b.stop(true,true);
   b.hasClass("show") ? b.removeClass("show").slideUp(180)
                      : b.slideDown(180,()=>b.addClass("show"));
