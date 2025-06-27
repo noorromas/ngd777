@@ -122,8 +122,8 @@ body{background:#000;margin:0}
 
   <div id="slim-body">
     <div class="item"><span class="badge">1</span><span class="name">ادمن كامل الصلاحيات + ( درع اسود هديه مدة شهر )</span><span class="price">500 ر.س</span><img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"></div>
-    <div class="item"><span class="badge">2</span><span class="name">اادمن اسود + ( ادمن تميز نجد هديه لمدة شهر )</span><span class="price">350 ر.س</span><img src="https://www.njd.chat/sico/zvqhLTljtX.gif"></div>
-    <div class="item"><span class="badge">3</span><span class="name">اادمن تميز نجد + ( تاج ذهبي هديه لمدة شهر )</span><span class="price">200 ر.س</span><img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"></div>
+    <div class="item"><span class="badge">2</span><span class="name">ادمن اسود + ( ادمن تميز نجد هديه لمدة شهر )</span><span class="price">350 ر.س</span><img src="https://www.njd.chat/sico/zvqhLTljtX.gif"></div>
+    <div class="item"><span class="badge">3</span><span class="name">ادمن تميز نجد + ( تاج ذهبي هديه لمدة شهر )</span><span class="price">200 ر.س</span><img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"></div>
     <div class="item"><span class="badge">4</span><span class="name">تاج ذهبي +  ( 3 نجمات ذهبيه لمدة شهر )</span><span class="price">150 ر.س</span><img src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"></div>
     <div class="item"><span class="badge">5</span><span class="name">تاج اسود +  ( 5 نجمات اسود هديه لمدة شهر )</span><span class="price">150 ر.س</span><img src="https://www.njd.chat/sico/z1c81hkk2r10.gif"></div>
     <div class="item"><span class="badge">6</span><span class="name">وكل اشتراك له روم صوتي خاص هديه من اداره الموقع</span><span class="price">هدية</span><img src="https://www.njd.chat/sico/z7tbj5tzEs.gif"></div>
