@@ -80,7 +80,7 @@ $(`<center>
 }
 </style>
 
-<div id="design-a">الاشتراكــات
+<div id="design-a">الاشتراكات  شات نجد - اضغط هنا
   <div id="spanan">
     <p style="text-align:center;color:#000080"><b>اشتراكات الشات</b></p>
 
