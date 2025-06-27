@@ -1,13 +1,14 @@
+
+
 $(`<center>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
-
 :root{
   --gold:#d4af37;
-  --bg:#eeeeee;         
-  --row:#ffffff;     
+  --bg:#eeeeee;
+  --row:#ffffff;
   --stroke:#cccccc;
   --txt:#222222;
   --radius:12px;
@@ -16,21 +17,19 @@ $(`<center>
 
 body{background:#000;margin:0}
 
-
 #subs-slim{
-  width:100%;           
-  max-width:none;   
-  margin:0 auto;       
+  width:100%;
+  max-width:none;
+  margin:0 auto;
   font-family:'Tajawal',sans-serif;
   color:var(--txt);
   background:var(--bg);
   border:1px solid var(--stroke);
-  border-radius:0;       
-  box-shadow:none;       
+  border-radius:0;
+  box-shadow:none;
   direction:rtl;
   overflow:hidden;
 }
-
 
 @keyframes pulse{
   0%,100%{text-shadow:0 0 5px rgba(212,175,55,.7),0 0 10px rgba(212,175,55,.4)}
@@ -40,7 +39,7 @@ body{background:#000;margin:0}
   background:linear-gradient(135deg,#2d2d2d,#000);
   color:var(--gold);
   text-align:center;
-  font-size:18px;
+  font-size:16px;   /* 18px → 16px //-edited */
   font-weight:700;
   padding:16px;
   cursor:pointer;
@@ -55,7 +54,6 @@ body{background:#000;margin:0}
 }
 #slim-body.show{opacity:1}
 
-
 .item{
   display:flex;
   align-items:center;
@@ -65,7 +63,7 @@ body{background:#000;margin:0}
   border-radius:var(--radius);
   padding:8px 10px;
   margin-bottom:10px;
-  font-size:14px;
+  font-size:12px;  /* 14px → 12px //-edited */
   opacity:0;
   transform:translateY(10px);
   transition:all .35s;
@@ -82,13 +80,12 @@ body{background:#000;margin:0}
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:12px;
+  font-size:10px;  /* 12px → 10px //-edited */
   font-weight:700;
 }
 .name{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.price{color:var(--gold);font-weight:700;font-size:13px}
+.price{color:var(--gold);font-weight:700;font-size:11px}  /* 13px → 11px //-edited */
 .item img{width:24px;height:24px;object-fit:contain}
-
 
 .contact{
   display:block;
@@ -98,7 +95,7 @@ body{background:#000;margin:0}
   padding:10px 32px;
   border-radius:24px;
   font-weight:700;
-  font-size:14px;
+  font-size:12px;  /* 14px → 12px //-edited */
   text-decoration:none;
   position:relative;
   overflow:hidden;
@@ -130,14 +127,13 @@ body{background:#000;margin:0}
     <div class="item"><span class="badge">7</span><span class="name">ومن اراد بنر لـ اسمه مع التصميم ولمدة شهرين</span><span class="price">100 ر.س</span><img src="https://www.njd.chat/sico/zs0F1tqr8G.gif"></div>
 
     <a class="contact" target="_blank"
-       href="https://raw.githack.com/noorromas/njd.chat/main/index.html">تواصل مع الادارة اضغط هنا </a>
-	   <a class="contact" target="_blank"
+       href="https://raw.githack.com/noorromas/njd.chat/main/index.html">تواصل مع الادارة اضغط هنا</a>
+    <a class="contact" target="_blank"
        href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">تواصل مع المصمم اضغط هنا</a>
   </div>
 </div>
 
 </center>`).insertBefore('#d2');
-
 
 $("#slim-head").on("click", function(){
   const body=$("#slim-body");
@@ -148,8 +144,6 @@ $("#slim-head").on("click", function(){
     body.slideDown(220, ()=> body.addClass("show"));
   }
 });
-
-
 
 
 
