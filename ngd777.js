@@ -4,156 +4,105 @@ $(`<center>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
-/* لوحة ألوان جديدة */
 :root{
-  --primary:#0075ff;     /* أزرق رئيسي */
-  --primary-dark:#0047b3; /* أزرق داكن */
-  --bg:#0d1117;          /* خلفية داكنة */
-  --card:#161b22;        /* خلفية البطاقة */
-  --stroke:#2d333b;      /* حدود ناعمة */
-  --txt:#e6edf3;         /* نص فاتح */
-  --accent:#d4af37;      /* ذهبي للسعر */
-  --radius:14px;
+  --accent:#d4af37;
+  --txt:#222;
+  --bg:#fff;
+  --border:#e5e5e5;
 }
 
-body{background:#000;margin:0;font-family:'Tajawal',sans-serif}
+body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
 
-#subs-alt{
+#subs-simple{
   width:100%;
-  max-width:480px;
+  max-width:340px;
   margin:0 auto;
-  color:var(--txt);
   background:var(--bg);
-  border:1px solid var(--stroke);
-  border-radius:var(--radius);
-  overflow:hidden;
+  color:var(--txt);
+  border:1px solid var(--border);
   direction:rtl;
-  box-shadow:0 8px 20px rgba(0,0,0,.45);
 }
 
-/* رأس الصندوق */
-#alt-head{
-  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+#simple-head{
+  background:var(--accent);
+  color:#000;
   text-align:center;
-  font-size:16px;
+  font-size:15px;
   font-weight:700;
-  padding:14px;
+  padding:10px;
   cursor:pointer;
   user-select:none;
-  letter-spacing:.5px;
-  position:relative;
-  overflow:hidden;
 }
-#alt-head::after{           /* وميض خفيف عند التحويم */
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.15) 50%,transparent 100%);
-  transform:translateX(-100%);
-  transition:transform .6s;
-}
-#alt-head:hover::after{transform:translateX(100%)}
 
-/* جسم الصندوق */
-#alt-body{
+#simple-body{
   display:none;
-  padding:22px 18px 28px;
   opacity:0;
-  transition:opacity .4s;
+  transition:opacity .3s;
+  padding:14px 12px 18px;
+  line-height:1.6;
 }
-#alt-body.show{opacity:1}
+#simple-body.show{opacity:1}
 
-/* البطاقة */
-.alt-item{
+.line{
+  font-size:13px;
+  border-bottom:1px dotted var(--border);
+  padding:6px 0;
   display:flex;
   align-items:center;
-  gap:12px;
-  background:var(--card);
-  border:1px solid var(--stroke);
-  border-radius:var(--radius);
-  padding:10px 12px;
-  margin-bottom:12px;
-  font-size:13px;
-  position:relative;
-  transition:transform .35s,box-shadow .35s;
+  gap:6px;
 }
-.alt-item:hover{
-  transform:translateY(-3px);
-  box-shadow:0 0 14px rgba(0,117,255,.35);
+.line:last-child{border:none}
+.line img{
+  width:20px;
+  height:20px;
+  object-fit:contain;
+  border-radius:4px;
 }
 
-.alt-img{width:28px;height:28px;object-fit:contain;border-radius:50%}
-.alt-num{
-  flex:0 0 32px;
-  height:32px;
-  background:var(--primary);
-  color:#fff;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:700;
-  font-size:11px;
-}
-.alt-name{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.alt-price{color:var(--accent);font-weight:700;font-size:12px}
+.num{color:var(--accent);font-weight:700;margin-left:4px}
+.price{color:var(--accent);font-weight:700;margin-right:4px}
 
-/* أزرار التواصل */
-.alt-link{
-  display:block;
-  margin:18px auto 0;
-  background:var(--primary);
-  color:#fff!important;
-  padding:12px 34px;
-  border-radius:30px;
+.link{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 12px;
+  background:var(--accent);
+  color:#000!important;
   font-weight:700;
   font-size:13px;
+  border-radius:18px;
   text-decoration:none;
-  position:relative;
-  overflow:hidden;
-  transition:transform .25s,box-shadow .25s;
 }
-.alt-link::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(120deg,transparent 0%,rgba(255,255,255,.4) 50%,transparent 100%);
-  transform:translateX(-100%) skewX(-20deg);
-  transition:transform .5s;
-}
-.alt-link:hover{transform:translateY(-3px);box-shadow:0 0 12px rgba(0,117,255,.55)}
-.alt-link:hover::before{transform:translateX(130%) skewX(-20deg)}
 </style>
 
-<div id="subs-alt">
-  <div id="alt-head">اشتركات شات نجد – اضغط للعرض</div>
+<div id="subs-simple">
+  <div id="simple-head">اشتركات شات نجد – اضغط للعرض</div>
 
-  <div id="alt-body">
-    <div class="alt-item"><span class="alt-num">1</span><span class="alt-name">ادمن كامل الصلاحيات + ( درع اسود هديه مدة شهر )</span><span class="alt-price">500 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/zvCFi1N2kj.gif"></div>
-    <div class="alt-item"><span class="alt-num">2</span><span class="alt-name">ادمن اسود + ( ادمن تميز نجد هديه لمدة شهر )</span><span class="alt-price">350 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/zvqhLTljtX.gif"></div>
-    <div class="alt-item"><span class="alt-num">3</span><span class="alt-name">ادمن تميز نجد + ( تاج ذهبي هديه لمدة شهر )</span><span class="alt-price">200 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/zsjUnTM2vK.gif"></div>
-    <div class="alt-item"><span class="alt-num">4</span><span class="alt-name">تاج ذهبي +  ( 3 نجمات ذهبيه لمدة شهر )</span><span class="alt-price">150 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"></div>
-    <div class="alt-item"><span class="alt-num">5</span><span class="alt-name">تاج اسود +  ( 5 نجمات اسود هديه لمدة شهر )</span><span class="alt-price">150 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/z1c81hkk2r10.gif"></div>
-    <div class="alt-item"><span class="alt-num">6</span><span class="alt-name">وكل اشتراك له روم صوتي خاص هديه من اداره الموقع</span><span class="alt-price">هدية</span><img class="alt-img" src="https://www.njd.chat/sico/z7tbj5tzEs.gif"></div>
-    <div class="alt-item"><span class="alt-num">7</span><span class="alt-name">ومن اراد بنر لـ اسمه مع التصميم ولمدة شهرين</span><span class="alt-price">100 ر.س</span><img class="alt-img" src="https://www.njd.chat/sico/zs0F1tqr8G.gif"></div>
+  <div id="simple-body">
 
-    <a class="alt-link" target="_blank"
-       href="https://raw.githack.com/noorromas/njd.chat/main/index.html">تواصل مع الادارة اضغط هنا</a>
-    <a class="alt-link" target="_blank"
-       href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">تواصل مع المصمم اضغط هنا</a>
+    <div class="line"><img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"><span class="num">1.</span> أدمن كامل الصلاحيات + (درع أسود شهر) <span class="price">— 500 ر.س</span></div>
+    <div class="line"><img src="https://www.njd.chat/sico/zvqhLTljtX.gif"><span class="num">2.</span> أدمن أسود + (أدمن تميز نجد شهر) <span class="price">— 350 ر.س</span></div>
+    <div class="line"><img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"><span class="num">3.</span> أدمن تميز نجد + (تاج ذهبي شهر) <span class="price">— 200 ر.س</span></div>
+    <div class="line"><img src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"><span class="num">4.</span> تاج ذهبي + (3 نجمات شهر) <span class="price">— 150 ر.س</span></div>
+    <div class="line"><img src="https://www.njd.chat/sico/z1c81hkk2r10.gif"><span class="num">5.</span> تاج أسود + (5 نجمات شهر) <span class="price">— 150 ر.س</span></div>
+    <div class="line"><img src="https://www.njd.chat/sico/z7tbj5tzEs.gif"><span class="num">6.</span> لكل اشتراك روم صوتي مجانًا <span class="price">— هدية</span></div>
+    <div class="line"><img src="https://www.njd.chat/sico/zs0F1tqr8G.gif"><span class="num">7.</span> بنر للاسم مع تصميم (شهرين) <span class="price">— 100 ر.س</span></div>
+
+    <a class="link" target="_blank" href="https://raw.githack.com/noorromas/njd.chat/main/index.html">تواصل مع الإدارة</a>
+    <a class="link" target="_blank" href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">تواصل مع المصمم</a>
   </div>
 </div>
 
 </center>`).insertBefore('#d2');
 
-/* تبديل الإظهار */
-$("#alt-head").on("click", function(){
-  const body=$("#alt-body");
+/* تشغيل الفتح والإغلاق */
+$("#simple-head").on("click", function(){
+  const body=$("#simple-body");
   body.stop(true,true);
-  if(body.is(":visible")){
-    body.slideUp(240, ()=> body.removeClass("show"));
+  if(body.hasClass("show")){
+    body.removeClass("show").slideUp(200);
   }else{
-    body.slideDown(240, ()=> body.addClass("show"));
+    body.slideDown(200,()=>body.addClass("show"));
   }
 });
 
