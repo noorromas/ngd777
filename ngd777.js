@@ -4,9 +4,8 @@ $(`<center>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
-/* ألوان وضبط عام */
 :root{
-  --accent:#4f46e5;     /* بنفسجي هادي */
+  --accent:#4f46e5;   /* اللون البنفسجي */
   --bg:#ffffff;
   --border:#e8e8e8;
   --text:#232323;
@@ -14,21 +13,21 @@ $(`<center>
 
 body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
 
-/* الحاوية */
+/* الصندوق الرئيســي */
 #subs-clean{
   width:100%;
-  max-width:300px;      /* مناسب للجوال */
+  max-width:300px;      /* يناسب شاشات الجوال */
   margin:0 auto;
   background:var(--bg);
   color:var(--text);
-  border:1px solid var(--border);
+  border:none;          /* أُزيل الإطار الخارجي */
   direction:rtl;
   overflow:hidden;
-  font-size:11px;       /* خط صغير */
+  font-size:11px;
   line-height:1.55;
 }
 
-/* رأس قابل للطي */
+/* الترويسة القابلة للطيّ */
 #clean-head{
   background:var(--accent);
   color:#fff;
@@ -39,7 +38,7 @@ body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
   user-select:none;
 }
 
-/* الجسم */
+/* جسم القائمة */
 #clean-body{
   display:none;
   opacity:0;
@@ -48,7 +47,7 @@ body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
 }
 #clean-body.show{opacity:1}
 
-/* كل سطر */
+/* كل سطر اشتراك */
 .entry{
   display:flex;
   align-items:center;
@@ -57,7 +56,7 @@ body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
 }
 .entry:last-child{border:none}
 
-/* شريط جانبي رفيع للتزيين */
+/* الشريط الجانبي */
 .entry::before{
   content:'';
   width:3px;height:100%;
@@ -66,7 +65,7 @@ body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
   margin-left:6px;
 }
 
-/* الأيقونة */
+/* الصورة */
 .entry img{
   width:18px;height:18px;
   margin-left:6px;
@@ -78,7 +77,7 @@ body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
 .num{font-weight:700;color:var(--accent);margin-left:3px}
 .price{font-weight:700;color:var(--accent);margin-right:3px;font-size:10px}
 
-/* زر تواصل */
+/* زرّ التواصل */
 .cta{
   display:block;
   margin:10px auto 0;
@@ -100,12 +99,12 @@ body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
 
   <div id="clean-body">
 
-    <div class="entry"><img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"><span class="num">1.</span> أدمن كامل الصلاحيات + (درع أسود شهر) <span class="price">— 500 ر.س</span></div>
-    <div class="entry"><img src="https://www.njd.chat/sico/zvqhLTljtX.gif"><span class="num">2.</span> أدمن أسود + (أدمن تميز نجد شهر) <span class="price">— 350 ر.س</span></div>
-    <div class="entry"><img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"><span class="num">3.</span> أدمن تميز نجد + (تاج ذهبي شهر) <span class="price">— 200 ر.س</span></div>
-    <div class="entry"><img src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"><span class="num">4.</span> تاج ذهبي + (3 نجمات شهر) <span class="price">— 150 ر.س</span></div>
-    <div class="entry"><img src="https://www.njd.chat/sico/z1c81hkk2r10.gif"><span class="num">5.</span> تاج أسود + (5 نجمات شهر) <span class="price">— 150 ر.س</span></div>
-    <div class="entry"><img src="https://www.njd.chat/sico/z7tbj5tzEs.gif"><span class="num">6.</span> لكل اشتراك روم صوتي مجانًا <span class="price">— هدية</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"><span class="num">1.</span> أدمن كامل الصلاحيات + (درع أسود شهر) لمده شهرين<span class="price">— 500 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/zvqhLTljtX.gif"><span class="num">2.</span> أدمن أسود + (أدمن تميز نجد شهر) لمده شهرين<span class="price">— 350 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"><span class="num">3.</span> أدمن تميز نجد + (تاج ذهبي شهر)لمده شهرين <span class="price">— 200 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"><span class="num">4.</span> تاج ذهبي + (3 نجمات شهر) لمدة شهرين<span class="price">— 150 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/z1c81hkk2r10.gif"><span class="num">5.</span> تاج أسود + (5 نجمات شهر) لمدة شهرين<span class="price">— 150 ر.س</span></div>
+    <div class="entry"><img src="https://www.njd.chat/sico/z7tbj5tzEs.gif"><span class="num">6.</span> لكل اشتراك روم صوتي مجانًا هديه من الاداره<span class="price">— هدية</span></div>
     <div class="entry"><img src="https://www.njd.chat/sico/zs0F1tqr8G.gif"><span class="num">7.</span> بنر للاسم مع تصميم (شهرين) <span class="price">— 100 ر.س</span></div>
 
     <a class="cta" target="_blank" href="https://raw.githack.com/noorromas/njd.chat/main/index.html">تواصل مع الإدارة</a>
@@ -115,12 +114,13 @@ body{margin:0;background:#000;font-family:'Tajawal',sans-serif}
 
 </center>`).insertBefore('#d2');
 
-/* تشغيل فتح/إغلاق */
+/* التحكم في الفتح والإغلاق */
 $("#clean-head").on("click",function(){
-  const b=$("#clean-body");
-  b.stop(true,true);
-  b.hasClass("show") ? b.removeClass("show").slideUp(180)
-                     : b.slideDown(180,()=>b.addClass("show"));
+  const body=$("#clean-body");
+  body.stop(true,true);
+  body.hasClass("show")
+    ? body.removeClass("show").slideUp(180)
+    : body.slideDown(180,()=>body.addClass("show"));
 });
 
 
