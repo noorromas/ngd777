@@ -295,7 +295,7 @@ z-index: 0 !important;
 #users .uzr.saad1 .saad_star1 {
 width: 90px;
 margin-top: -11px;
-margin-left: -21px;
+margin-left: -19px;
 }
 
 
