@@ -90,7 +90,7 @@ $(`<center>
     <div class="item"><span class="num">- 6</span> نجمة ذهبيه + ( 7  نجمات هديه لمدة شهر ) بـ 100 ريال لمدة شهرين <img src="https://www.njd.chat/sico/z1N7pSxZI8.gif"></div>
 
     <p><b>ومن أراد بنر لاسمه بـ 100 ريال مع التصميم ولمدة شهرين</b></p>
-    <p style="text-align:center"><u><b><a target="_blank" href="https://raw.githack.com/noorromas/njd.chat/main/index.html">وللتواصل مع الإدارة اضغط هنا</a></b></u></p>
+    <p style="text-align:center"><u><b><a target="_blank" href="https://www.njd.chat/esh.html">وللتواصل مع الإدارة اضغط هنا</a></b></u></p>
     <p style="text-align:center"><u><b><a target="_blank" href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">وللتواصل مع المصمم اضغط هنا</a></b></u></p>
   </div>
 </div>
