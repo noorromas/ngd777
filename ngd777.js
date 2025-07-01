@@ -128,11 +128,16 @@ box-shadow: 0 0 0px rgb(255, 255, 255), inset 0 0 10px rgb(0, 0, 0), 0 0 0 0px #
   background-size: 90% 100%;
 }
 #users .uzr.nour .ustat {
-width: 12px !important;
-border-radius: 50px !important;
-height: 12px !important;
-min-height: 0% !important;
-z-index: 0 !important;
+width: 13px !important;
+    height: 13px !important;
+    min-height: 0%!important;
+    margin-right: 0;
+    z-index: 999999;
+    border-radius: 50px;
+    border: 1px solid #fff0;
+    border-radius: 0 5px 0 5px;
+    margin-left: 1px;
+    margin-top: 1px;;
 }
 #users .uzr.nour span.uhash {
   margin-right: 324px;
@@ -214,11 +219,16 @@ box-shadow: 0 0 0px rgb(255, 255, 255), inset 0 0 10px rgb(0, 0, 0), 0 0 0 0px #
   background-size: 90% 100%;
 }
 #users .uzr.saad1 .ustat {
-width: 12px !important;
-border-radius: 50px !important;
-height: 12px !important;
-min-height: 0% !important;
-z-index: 0 !important;
+width: 13px !important;
+    height: 13px !important;
+    min-height: 0%!important;
+    margin-right: 0;
+    z-index: 999999;
+    border-radius: 50px;
+    border: 1px solid #fff0;
+    border-radius: 0 5px 0 5px;
+    margin-left: 1px;
+    margin-top: 1px;
 }
 #users .uzr.saad1 span.uhash {
   margin-right: 324px;
