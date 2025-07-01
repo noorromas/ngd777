@@ -252,7 +252,7 @@ margin-left: -19px;
 var l_itvsaad=setInterval(function(){
     if(myid!=null){
         clearInterval(l_itvsaad);
-        $("#users .uzr:contains('k7!lan')").addClass('saad1');
+        $("#users .uzr:contains('k7!')").addClass('saad1');
         $("#users .uzr.saad1 .fitimg.u-pic").append('<img class="saad_star1" src="https://up6.cc/2023/02/167585425188951.png">');
 		$("#users .uzr.saad1 span.u-topic").after('<img id="mystory1" class="My_vedio1" title="ستوري" style="float: right;width: 20px;margin-top: 0px;margin-right: 5px;cursor: pointer;" src="https://i.ibb.co/47VS4nY/image.png">');
         $("#users .uzr.saad1 span.uhash, #users .uzr.saad1 img.co").hide(); 
@@ -262,7 +262,7 @@ var l_itvsaad=setInterval(function(){
         $('#movon1').addClass('athb1');
         $("#movon1").before('<div class="modal-dialog fr break" style="height: 338px; max-width: 340px; min-width: 300px; min-height: 599px;overflow: visible;margin-top:40px;"></div>');
         $("#movon1").append('<div style="max-width: 340px; min-width: 300px; color:white; width: 338px; float: right;" class="modal-header label-primary"><span class="pull-right clickable badge"><i class="fa fa-times"></i></span><label style="margin:1px; float: right;" > My vedio </label></div>');  
-        $("#movon1").append('<iframe id="ifr_mov1" style="max-width: 340px;min-width: 300px;right: 0; top: 35px; left: auto;" class="modal in" role="dialog" style="z-index: 2100; display: none; style="max-width:240px;" src="https://www.youtube.com/embed/nfTocUD0puI" allowfullscreen="" width="338" height="490" frameborder="0"></iframe>');
+        $("#movon1").append('<iframe id="ifr_mov1" style="max-width: 340px;min-width: 300px;right: 0; top: 35px; left: auto;" class="modal in" role="dialog" style="z-index: 2100; display: none; style="max-width:240px;" src="https://www.youtube.com/embed/TIADQkQo1Y8" allowfullscreen="" width="338" height="490" frameborder="0"></iframe>');
         $("#ifr_mov1").show(function(){
         $("#upro").modal("hide");
     } ); 
