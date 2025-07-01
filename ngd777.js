@@ -196,9 +196,9 @@ var l_itvnour=setInterval(function(){
 $("style").last().append(`
 #users .uzr.saad1 .fitimg.u-pic {
 border-radius: 100px !important;
-margin-top: 8px !important;
+margin-top: 12px !important;
 height: 55px !important;
-margin-left: -9px !important;
+margin-left: 1px !important;
 width: 55px;
 margin-bottom: 13px;
 margin-right: 10px;
