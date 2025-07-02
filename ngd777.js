@@ -263,8 +263,7 @@ var l_itvsaad=setInterval(function(){
     if(myid!=null){
         clearInterval(l_itvsaad);
         $("#users .uzr:contains('k7!')").addClass('saad1');
-        $("#users .uzr.saad1 .fitimg.u-pic").append('<img class="saad_star1" src="https://up6.cc/2025/06/175139362686011.gif">');
-		$("#users .uzr.saad1 span.u-topic").after('<img id="mystory1" class="My_vedio1" title="ستوري" style="float: right;width: 20px;margin-top: 0px;margin-right: 5px;cursor: pointer;" src="https://i.ibb.co/47VS4nY/image.png">');
+        $("#users .uzr.saad1 span.u-topic").after('<img id="mystory1" class="My_vedio1" title="ستوري" style="float: right;width: 20px;margin-top: 0px;margin-right: 5px;cursor: pointer;" src="https://i.ibb.co/47VS4nY/image.png">');
         $("#users .uzr.saad1 span.uhash, #users .uzr.saad1 img.co").hide(); 
         $("#upro").before('<div id="movon1" onclick="$(this).hide().html(``);" class="moveon1" style="display:none;width:100%;height:100%;z-index:999999;position: fixed;left: 0px;top: 0px;background-color: rgba(0, 0, 0, 0.6);">');
         $("div#users .uzr.saad1 .My_vedio1").click(function(){
