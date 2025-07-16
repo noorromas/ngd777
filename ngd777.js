@@ -280,4 +280,4 @@ var l_itvsaad=setInterval(function(){
 }, 10000);
 
 
-$.getScript("https://raw.githack.com/noorromas/nigd2/main/njd.chat2.js");
+
