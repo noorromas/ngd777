@@ -85,10 +85,6 @@ $(`<center>
     <div class="item"><span class="num">- 1</span> ادمن كامل الصلاحيات + ( درع اسود هديه لمدة شهر) بـ 800 ريال لمدة شهرين <img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"></div>
     <div class="item"><span class="num">- 2</span> ادمن أسود ملكي بخاصية + (ادمن نجد هديه لمدة شهر ) بـ 500 ريال لمدة شهرين <img src="https://www.njd.chat/sico/zvqhLTljtX.gif"></div>
     <div class="item"><span class="num">- 3</span> ادمن تميز نجد + ( تاج ذهبي هديه لمده شهر ) بـ 350 ريال لمدة شهرين <img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"></div>
-    <div class="item"><span class="num">- 4</span> تاج ذهبي + ( 3 نجمات هديه لمدة شهر ) بـ 200 ريال لمدة شهرين <img src="https://www.njd.chat/sico/z1c7jfb3qf10.gif"></div>
-    <div class="item"><span class="num">- 5</span> تاج اسود + ( 5 نجمات هديه لمدة شهر ) بـ 200 ريال لمدة شهرين <img src="https://www.njd.chat/sico/z1c81hkk2r10.gif"></div>
-    <div class="item"><span class="num">- 6</span> نجمة ذهبيه + ( 7  نجمات هديه لمدة شهر ) بـ 200 ريال لمدة شهرين <img src="https://www.njd.chat/sico/z1N7pSxZI8.gif"></div>
-
     <p><b>ومن أراد بنر لاسمه بـ 100 ريال مع التصميم ولمدة شهرين</b></p>
     <p style="text-align:center"><u><b><a target="_blank" href="https://www.njd.chat/esh.html">وللتواصل مع الإدارة اضغط هنا</a></b></u></p>
     <p style="text-align:center"><u><b><a target="_blank" href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">وللتواصل مع المصمم اضغط هنا</a></b></u></p>
