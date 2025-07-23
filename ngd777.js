@@ -141,8 +141,19 @@ $("style").last().append(`
     margin-bottom: 4px !important;
     padding: 26px !important;
   }
-
-  
+  #users .uzr.nour1 .u-msg {
+    color: #000 !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin-bottom: 2px !important;
+    margin-right: 60px !important;
+    margin-left: 3px;
+    background-size: cover;
+    margin-top: 2px !important;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white !important;
+    background-image: url() !important;
+    border-radius: 0 8px 0 8px;
+  }
   #users .uzr.nour1 {
     box-shadow: inset 0 0 0 rgba(0,0,0,0.08), 0 0 2px #000;
     margin-bottom: 3px !important;
