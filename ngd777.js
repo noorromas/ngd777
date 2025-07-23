@@ -257,4 +257,4 @@ var atb31Interval = setInterval(function() {
       clearInterval(atb31Interval);
     }
   }
-}, 3000);
+}, 1000);
