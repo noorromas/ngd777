@@ -160,7 +160,7 @@ $("style").last().append(`
     margin-top: 2px !important;
     border-radius: 0 8px 0 8px;
     border: 1px solid #fff;
-    background-image: url(https://up6.cc/2025/07/175324565889511.png);
+    background-image: url(https://up6.cc/2025/07/175331007172461.png);
     background-size: 100%;
   }
   #users .uzr.nour1 .d-flex.fl {
