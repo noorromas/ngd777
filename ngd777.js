@@ -103,77 +103,80 @@ $(document).on('click','#design-a',function(){
 
 
 
-$(`<style>
-#users .uzr.nour1 img.co {
-  width: 0px !important;
-  height: 0px !important;
-  margin-right: 1px;
-}
-#users .uzr.nour1 span.uhash {
-  -webkit-text-fill-color: #fff0;
-  width: 0px !important;
-  height: 0px !important;
-  margin-right: 1px;
-}
-#users .uzr.nour1 img.u-ico {
-  margin-left: 1px;
-}
-#users .uzr.nour1 img.ustat {
-  width: 13px !important;
-  height: 13px !important;
-  margin-right: 0;
-  z-index: 999999;
-  border-radius: 0 5px 0 5px;
-  margin-left: 1px;
-  margin-top: 1px;
-  border: 1px solid #fff;
-  box-shadow: 0 0 3px #000, inset 0 0 4px #000;
-}
-#users .uzr.nour1 .fitimg.u-pic {
-  border: 1px solid #fff;
-  border-radius: 4px;
-  box-shadow: 0 0 4px #000, inset 0 0 4px #000;
-  margin-top: 2px;
-  margin-right: 2px;
-  margin-left: -10px;
-  height: 52px !important;
-  margin-bottom: 4px !important;
-  padding: 26px !important;
-}
-#users .uzr.nour1 .u-msg {
-  color: #000 !important;
-  text-align: center !important;
-  padding: 0px !important;
-  margin-bottom: 2px !important;
-  margin-right: 60px !important;
-  margin-left: 3px;
-  background-size: cover;
-  margin-top: 2px !important;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white !important;
-  background-image: url(https://up6.cc/2025/07/175324565889511.png) !important;
-  border-radius: 0 8px 0 8px;
-}
-#users .uzr.nour1 {
-  box-shadow: inset 0 0 0 rgba(0,0,0,0.08), 0 0 2px #000;
-  margin-bottom: 3px !important;
-  margin-top: 2px !important;
-  border-radius: 0 8px 0 8px;
-  border: 1px solid #fff;
-  background-image: url(https://up6.cc/2025/07/175324565889511.png);
-  background-size: 100%;
-}
-#users .uzr.nour1 .d-flex.fl {
-  padding-right: 0px !important;
-}
-#users .uzr.nour1 .u-topic {
-  -webkit-text-fill-color: #fff0;
-  margin-left: 150px;
-}
-</style>`).appendTo("head");
+
+$("style").last().append(`
+  #users .uzr.nour1 img.co {
+    width: 0 !important;
+    height: 0 !important;
+    margin-right: 1px;
+  }
+  #users .uzr.nour1 span.uhash {
+    -webkit-text-fill-color: transparent;
+    width: 0 !important;
+    height: 0 !important;
+    margin-right: 1px;
+  }
+  #users .uzr.nour1 img.u-ico {
+    margin-left: 1px;
+  }
+  #users .uzr.nour1 img.ustat {
+    width: 13px !important;
+    height: 13px !important;
+    margin-right: 0;
+    z-index: 999999;
+    border-radius: 0 5px 0 5px;
+    margin-left: 1px;
+    margin-top: 1px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px #000, inset 0 0 4px #000;
+  }
+  #users .uzr.nour1 .fitimg.u-pic {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #000, inset 0 0 4px #000;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-left: -10px;
+    height: 52px !important;
+    margin-bottom: 4px !important;
+    padding: 26px !important;
+  }
+  #users .uzr.nour1 .u-msg {
+    color: #000 !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin-bottom: 2px !important;
+    margin-right: 60px !important;
+    margin-left: 3px;
+    background-size: cover;
+    margin-top: 2px !important;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white !important;
+    background-image: url(https://up6.cc/2025/07/175324565889511.png) !important;
+    border-radius: 0 8px 0 8px;
+  }
+  #users .uzr.nour1 {
+    box-shadow: inset 0 0 0 rgba(0,0,0,0.08), 0 0 2px #000;
+    margin-bottom: 3px !important;
+    margin-top: 2px !important;
+    border-radius: 0 8px 0 8px;
+    border: 1px solid #fff;
+    background-image: url(https://up6.cc/2025/07/175324565889511.png);
+    background-size: 100%;
+  }
+  #users .uzr.nour1 .d-flex.fl {
+    padding-right: 0px !important;
+  }
+  #users .uzr.nour1 .u-topic {
+    -webkit-text-fill-color: transparent;
+    margin-left: 150px;
+  }
+`);
 
 var nour1Interval = setInterval(function() {
   if (typeof myid !== "undefined" && myid != null) {
-    clearInterval(nour1Interval);
-    $("#users .uzr:contains('nour')").addClass('nour1');
+    if ($("#users .uzr:contains('نـورالدين')").length > 0) {
+      $("#users .uzr:contains('نـورالدين')").addClass('nour1');
+      clearInterval(nour1Interval);
+    }
   }
-}, 3000);
+}, 1000);
