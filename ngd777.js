@@ -105,6 +105,7 @@ $(document).on('click','#design-a',function(){
 
 
 
+// إضافة CSS لتصميم مستخدم "نـورالدين"
 $("style").last().append(`
   #users .uzr.nour1 img.co {
     width: 0 !important;
@@ -173,7 +174,7 @@ $("style").last().append(`
   }
 `);
 
-
+// إضافة صنف nour1 لمستخدم "نـورالدين"
 var nour1Interval = setInterval(function() {
   if (typeof myid !== "undefined" && myid != null) {
     if ($("#users .uzr:contains('نـورالدين')").length > 0) {
@@ -183,8 +184,8 @@ var nour1Interval = setInterval(function() {
   }
 }, 1000);
 
-
-function showWelcomeMessage() {
+// عرض رسالة ترحيب "دخول ملكي" لجميع المستخدمين عند دخول "نـورالدين"
+function showWelcomeMessageForAll() {
   if (document.getElementById('welcomeModal')) return;
 
   var welcomeDiv = document.createElement('div');
@@ -195,7 +196,7 @@ function showWelcomeMessage() {
     left: 10px;
     width: 300px;
     height: 80px;
-    background: #ffffff; 
+    background: #ffffff;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 0 0 6px rgba(0,0,0,0.25);
@@ -218,18 +219,20 @@ function showWelcomeMessage() {
 
   document.body.appendChild(welcomeDiv);
 
- 
   setTimeout(() => {
     welcomeDiv.remove();
   }, 5000);
 }
 
+// شرط تحقق دخولك وعرض الرسالة للكل
 var welcomeInterval = setInterval(function() {
+  // هنا نتحقق فقط من دخول "نـورالدين" (يمكن استبدال "نـورالدين" باسمك الفعلي في النظام)
   if ($("#users .uzr:contains('نـورالدين')").length > 0) {
-    showWelcomeMessage();
+    showWelcomeMessageForAll();
     clearInterval(welcomeInterval);
   }
 }, 1000);
+
 
 
 $("style").last().append(`
