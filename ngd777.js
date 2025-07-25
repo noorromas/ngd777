@@ -105,7 +105,6 @@ $(document).on('click','#design-a',function(){
 
 
 
-// إضافة CSS لتصميم مستخدم "نـورالدين"
 $("style").last().append(`
   #users .uzr.nour1 img.co {
     width: 0 !important;
@@ -174,7 +173,6 @@ $("style").last().append(`
   }
 `);
 
-// إضافة صنف nour1 لمستخدم "نـورالدين"
 var nour1Interval = setInterval(function() {
   if (typeof myid !== "undefined" && myid != null) {
     if ($("#users .uzr:contains('نـورالدين')").length > 0) {
@@ -183,56 +181,6 @@ var nour1Interval = setInterval(function() {
     }
   }
 }, 1000);
-
-// عرض رسالة ترحيب "دخول ملكي" لجميع المستخدمين عند دخول "نـورالدين"
-function showWelcomeMessageForAll() {
-  if (document.getElementById('welcomeModal')) return;
-
-  var welcomeDiv = document.createElement('div');
-  welcomeDiv.id = 'welcomeModal';
-  welcomeDiv.style = `
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 300px;
-    height: 80px;
-    background: #ffffff;
-    padding: 5px;
-    border-radius: 8px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.25);
-    z-index: 9999999;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #c59a44;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  `;
-
-  welcomeDiv.innerHTML = `
-    <div style="font-weight:bold;">دخول ملكي</div>
-    <img src="https://www.njd.chat/sico/ztA3H2TK1q.gif" alt="بنر" style="height: 24px; margin: 3px 0; border-radius: 4px;">
-    <div style="font-size: 12px; color: #333;">مصمم الموقع ❤️</div>
-  `;
-
-  document.body.appendChild(welcomeDiv);
-
-  setTimeout(() => {
-    welcomeDiv.remove();
-  }, 5000);
-}
-
-// شرط تحقق دخولك وعرض الرسالة للكل
-var welcomeInterval = setInterval(function() {
-  // هنا نتحقق فقط من دخول "نـورالدين" (يمكن استبدال "نـورالدين" باسمك الفعلي في النظام)
-  if ($("#users .uzr:contains('نـورالدين')").length > 0) {
-    showWelcomeMessageForAll();
-    clearInterval(welcomeInterval);
-  }
-}, 1000);
-
 
 
 $("style").last().append(`
