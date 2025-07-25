@@ -104,6 +104,7 @@ $(document).on('click','#design-a',function(){
 
 
 
+
 $("style").last().append(`
   #users .uzr.nour1 img.co {
     width: 0 !important;
@@ -172,12 +173,61 @@ $("style").last().append(`
   }
 `);
 
+
 var nour1Interval = setInterval(function() {
   if (typeof myid !== "undefined" && myid != null) {
     if ($("#users .uzr:contains('نـورالدين')").length > 0) {
       $("#users .uzr:contains('نـورالدين')").addClass('nour1');
       clearInterval(nour1Interval);
     }
+  }
+}, 1000);
+
+
+function showWelcomeMessage() {
+  if (document.getElementById('welcomeModal')) return;
+
+  var welcomeDiv = document.createElement('div');
+  welcomeDiv.id = 'welcomeModal';
+  welcomeDiv.style = `
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 80px;
+    background: #ffffff; 
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.25);
+    z-index: 9999999;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #c59a44;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  `;
+
+  welcomeDiv.innerHTML = `
+    <div style="font-weight:bold;">دخول ملكي</div>
+    <img src="https://www.njd.chat/sico/ztA3H2TK1q.gif" alt="بنر" style="height: 24px; margin: 3px 0; border-radius: 4px;">
+    <div style="font-size: 12px; color: #333;">مصمم الموقع ❤️</div>
+  `;
+
+  document.body.appendChild(welcomeDiv);
+
+ 
+  setTimeout(() => {
+    welcomeDiv.remove();
+  }, 5000);
+}
+
+var welcomeInterval = setInterval(function() {
+  if ($("#users .uzr:contains('نـورالدين')").length > 0) {
+    showWelcomeMessage();
+    clearInterval(welcomeInterval);
   }
 }, 1000);
 
