@@ -1,10 +1,9 @@
-
 $(`<center>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
 :root{
-  --primary:#105873;
+  --primary:#019d03;
   --bg:#ffe0b6;
   --border:#6b5f5f;
   --shadow:rgba(0,0,0,.1);
@@ -19,7 +18,7 @@ $(`<center>
   border-bottom:3px solid var(--primary);
   border-radius:0 0 15px 15px;
   padding:8px 12px;
-  text-align:center;
+  text-align:center; /* النص كله وسط */
   font-family:'Tajawal',sans-serif;
   font-weight:700;
   font-size:15px;            
@@ -34,26 +33,28 @@ $(`<center>
 
 #spanan{
   display:none;
-  text-align:right;
-  font-family:'jazeera-light',FontAwesome;
+  text-align:center; /* النص داخل القائمة وسط */
+  direction:rtl;
+  font-family:'Tajawal',sans-serif;
   color:#000;
-  line-height:1.7;
+  line-height:1.9;
   margin-top:10px;
   background:#ffffffdd;
-  padding:10px;
+  padding:12px;
   border-radius:10px;
   box-shadow:0 0 8px var(--shadow);
   font-size:14px;          
 }
-#spanan p{margin:4px 0}
+#spanan p{margin:6px 0}
 
 .item{
   display:flex;
+  justify-content:center; /* العناصر وسط */
   align-items:center;
-  gap:6px;
+  gap:8px;
   margin:6px 0;
   background:#f8f8f8;
-  padding:5px 7px;
+  padding:6px 10px;
   border-radius:8px;
   transition:background .2s;
   font-size:14px;          
@@ -71,23 +72,30 @@ $(`<center>
 .num{
   font-weight:700;
   color:red;
-  padding-right:12px;
   min-width:32px;
-  text-align:right;
+  text-align:center;
   font-size:14px;           
 }
 </style>
 
-<div id="design-a">الاشتراكات  شات نجد - اضغط هنا
+<div id="design-a">⭐🟢 عروض بمناسبة اليوم الوطني السعودي - اضغط هنا ⭐🟢
   <div id="spanan">
-    <p style="text-align:center;color:#000080"><b>اشتراكات الشات</b></p>
+    <p style="color:red"><b>⭐🟢 عروض مخفضة للمشتركين / بمناسبة قرب اليوم الوطني السعودي ⭐🟢</b></p>
 
-    <div class="item"><span class="num">- 1</span> ادمن كامل الصلاحيات + ( درع اسود هديه لمدة شهر) بـ 800 ريال لمدة شهرين <img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"></div>
-    <div class="item"><span class="num">- 2</span> ادمن أسود ملكي بخاصية + (ادمن نجد هديه لمدة شهر ) بـ 500 ريال لمدة شهرين <img src="https://www.njd.chat/sico/zvqhLTljtX.gif"></div>
-    <div class="item"><span class="num">- 3</span> ادمن تميز نجد + ( تاج ذهبي هديه لمده شهر ) بـ 350 ريال لمدة شهرين <img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"></div>
-    <p><b>ومن أراد بنر لاسمه بـ 100 ريال مع التصميم ولمدة شهرين</b></p>
-    <p style="text-align:center"><u><b><a target="_blank" href="https://www.njd.chat/esh.html">وللتواصل مع الإدارة اضغط هنا</a></b></u></p>
-    <p style="text-align:center"><u><b><a target="_blank" href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html">وللتواصل مع المصمم اضغط هنا</a></b></u></p>
+    <div class="item"><span class="num">1-</span> اشترك ادمن ذهبي شهرين <b>650 ريال</b> واحصل على (2 ادمن اسود ) <img src="https://www.njd.chat/sico/zvCFi1N2kj.gif"></div>
+
+    <div class="item"><span class="num">2-</span> اشترك ادمن اسود شهرين <b>350 ريال</b> واحصل على ( تاج ذهبي )  <img src="https://www.njd.chat/sico/zvqhLTljtX.gif"></div>
+
+    <div class="item"><span class="num">3-</span> اشترك تميز نجد  شهرين <b>200 ريال</b> واحصل على (تاج فضي )  <img src="https://www.njd.chat/sico/zsjUnTM2vK.gif"></div>
+
+    <div class="item"><span class="num">4-</span> اشترك تاج اسود مخفي شهرين <b>150 ريال</b> واحصل على (نجمتين ذهبية )  <img src="https://www.njd.chat/sico/zk1TyxoSSD.gif"></div>
+
+    <div class="item"><span class="num">5-</span> تصميم بنر لمده شهرين <b>100 ريال</b></div>
+
+    <p style="color:green"><b>⭐🟢 ملاحظة: تنتهي العروض نهاية شهر سبتمبر ⭐🟢</b></p>
+    <p><b>⭐🟢 وكل عام والشعب السعودي وحكومته وشعبها بألف خير ⭐🟢</b></p>
+
+    <p><u><b><a target="_blank" href="https://www.njd.chat/esh.html">⭐🟢 للتواصل مع الإدارة اضغط هنا ⭐🟢</a></b></u></p>
   </div>
 </div>
 </center>`).insertBefore('#d2');
@@ -95,7 +103,3 @@ $(`<center>
 $(document).on('click','#design-a',function(){
   $('#spanan').slideToggle();
 });
-
-
-
-
