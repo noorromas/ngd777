@@ -18,7 +18,7 @@ $(`<center>
   border-bottom:3px solid var(--primary);
   border-radius:0 0 15px 15px;
   padding:8px 12px;
-  text-align:center; /* النص كله وسط */
+  text-align:center; 
   font-family:'Tajawal',sans-serif;
   font-weight:700;
   font-size:15px;            
@@ -33,7 +33,7 @@ $(`<center>
 
 #spanan{
   display:none;
-  text-align:center; /* النص داخل القائمة وسط */
+  text-align:center;
   direction:rtl;
   font-family:'Tajawal',sans-serif;
   color:#000;
@@ -49,7 +49,7 @@ $(`<center>
 
 .item{
   display:flex;
-  justify-content:center; /* العناصر وسط */
+  justify-content:center; 
   align-items:center;
   gap:8px;
   margin:6px 0;
@@ -103,3 +103,4 @@ $(`<center>
 $(document).on('click','#design-a',function(){
   $('#spanan').slideToggle();
 });
+
