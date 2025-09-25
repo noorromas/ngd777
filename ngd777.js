@@ -3,9 +3,9 @@ $(`<center>
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
 :root{
-  --primary:#ff0000; /* أحمر */
-  --bg:#ffffff;      /* أبيض */
-  --border:#000000;  /* أسود */
+  --primary:#ff0000;
+  --bg:#ffffff;     
+  --border:#000000;  
   --shadow:rgba(0,0,0,.1);
 }
 
@@ -103,3 +103,4 @@ $(`<center>
 $(document).on('click','#design-a',function(){
   $('#spanan').slideToggle();
 });
+
