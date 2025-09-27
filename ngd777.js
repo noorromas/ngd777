@@ -49,13 +49,13 @@ $(`<center>
 
         <p>
           <div style="float: right; padding-right: 20px;">- 5</div>
-          تاج فضي بـ 150 ريال لمدة : شهر
+          تاج فضي بـ 150 ريال لمدة : شهرين
           <img src="https://up6.cc/2025/08/175895922825371.gif">
         </p>
 
         <p>
           <div style="float: right; padding-right: 20px;">- 6</div>
-          نجمتين ذهبي بـ 100 ريال لمدة : شهر
+          نجمتين ذهبي بـ 100 ريال لمدة : شهرين
           <img src="https://up6.cc/2025/08/175895927897361.gif">
         </p>
 
@@ -79,5 +79,6 @@ $(`<center>
 $("#design-a").click(function(){
   $("#spanan").slideToggle(function(){});
 });
+
 
 
