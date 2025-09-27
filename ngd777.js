@@ -25,38 +25,38 @@ $(`<center>
 
         <p>
           <div style="float: right; padding-right: 20px;">- 1</div>
-           اشترك ادمن ذهبي شهرين 650ريال واحصل على (2 ادمن اسود )
+           اشترك ادمن ذهبي 650ريال لمدة شهرين واحصل ادمن اسود
           <img src="https://www.njd.chat/sico/zvCFi1N2kj.gif">
         </p>
 
         <p>
           <div style="float: right; padding-right: 20px;">- 2</div>
-          اشترك ادمن اسود شهرين 350ريال واحصل على ( تاج ذهبي )
+          اشترك ادمن اسود 350ريال لمدة شهرين واحصل تاج ذهبي
           <img src="https://www.njd.chat/sico/zvqhLTljtX.gif">
         </p>
 
         <p>
           <div style="float: right; padding-right: 20px;">- 3</div>
-          تاج تميز نجد (المخفي) بـ 200ريال لمدة : شهرين
+          تاج تميز نجد (المخفي) بـ 250ريال لمدة : شهرين
           <img src="https://up6.cc/2025/08/175895766567491.gif">
         </p>
 
         <p>
           <div style="float: right; padding-right: 20px;">- 4</div>
-          تاج فضي بـ 200ريال لمدة : شهرين
-          <img src="https://up6.cc/2025/08/175895772189571.gif">
+          تاج الاسود بـ 200ريال لمدة : شهرين
+          <img src="https://up6.cc/2025/08/175895917686871.gif">
         </p>
 
         <p>
           <div style="float: right; padding-right: 20px;">- 5</div>
-          نجمتين ذهبي بـ 150 ريال لمدة : شهر
-          <img src="https://up6.cc/2025/08/175895779050061.gif">
+          تاج فضي بـ 150 ريال لمدة : شهر
+          <img src="https://up6.cc/2025/08/175895922825371.gif">
         </p>
 
         <p>
           <div style="float: right; padding-right: 20px;">- 6</div>
-          ثلاث نجوم سوداء بـ 100 ريال لمدة : شهر
-          <img src="https://up6.cc/2025/08/175895774663421.gif">
+          نجمتين ذهبي بـ 100 ريال لمدة : شهر
+          <img src="https://up6.cc/2025/08/175895927897361.gif">
         </p>
 
         <p>
@@ -79,4 +79,5 @@ $(`<center>
 $("#design-a").click(function(){
   $("#spanan").slideToggle(function(){});
 });
+
 
