@@ -60,7 +60,7 @@ $(`<center>
         </p>
 
         <p>
-          <b>ومن اراد بنر لـ اسمه بـ 100 ريال مع التصميم ولمدة شهر</b>
+          <b>ومن اراد بنر لـ اسمه بـ 100 ريال مع التصميم ولمدة شهرين</b>
         </p>
 
         <p style="text-align: center">
@@ -79,3 +79,4 @@ $(`<center>
 $("#design-a").click(function(){
   $("#spanan").slideToggle(function(){});
 });
+
