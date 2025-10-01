@@ -24,37 +24,37 @@ $(`<center>
 
         <p style="color: #e67e22;">
           <div style="float: right; padding-right: 20px;">- 1</div>
-          اشترك ادمن ذهبي 650ريال لمدة شهرين واحصل ادمن اسود
+          اشترك ادمن ذهبي 800ريال لمدة شهرين واحصل ادمن اسود
           <img src="https://www.njd.chat/sico/zvCFi1N2kj.gif">
         </p>
 
         <p style="color: #2ecc71;">
           <div style="float: right; padding-right: 20px;">- 2</div>
-          اشترك ادمن اسود 350ريال لمدة شهرين واحصل تاج ذهبي
+          اشترك ادمن اسود 550ريال لمدة شهرين واحصل تاج ذهبي
           <img src="https://www.njd.chat/sico/zvqhLTljtX.gif">
         </p>
 
         <p style="color: #3498db;">
           <div style="float: right; padding-right: 20px;">- 3</div>
-          تاج تميز نجد (المخفي) بـ 250ريال لمدة : شهرين
+          تاج تميز نجد (المخفي) بـ 400ريال لمدة : شهرين
           <img src="https://up6.cc/2025/08/175895766567491.gif">
         </p>
 
         <p style="color: #9b59b6;">
           <div style="float: right; padding-right: 20px;">- 4</div>
-          تاج الاسود بـ 200ريال لمدة : شهرين
+          تاج الاسود بـ 250ريال لمدة : شهرين
           <img src="https://up6.cc/2025/08/175895917686871.gif">
         </p>
 
         <p style="color: #c0392b;">
           <div style="float: right; padding-right: 20px;">- 5</div>
-          تاج فضي بـ 150 ريال لمدة : شهرين
+          تاج فضي بـ 200ريال لمدة : شهرين
           <img src="https://up6.cc/2025/08/175895922825371.gif">
         </p>
 
         <p style="color: #16a085;">
           <div style="float: right; padding-right: 20px;">- 6</div>
-          نجمتين ذهبي بـ 100 ريال لمدة : شهرين
+          نجمه ذهبي بـ 150ريال لمدة : شهرين
           <img src="https://up6.cc/2025/08/175895927897361.gif">
         </p>
 
@@ -67,6 +67,11 @@ $(`<center>
             <a target="_blank" href="https://www.njd.chat/esh.html" style="color: inherit;">
               وللتواصل مع الاداره اضغط هنا
             </a>
+            <p style="text-align: center; color: #8e44ad;">
+          <u><b>
+            <a target="_blank" href="https://raw.githack.com/noorromas/nouraldeen/main/nouraldeen.html" style="color: inherit;">
+              وللتواصل مع المصمم اضغط هنا
+            </a>
           </b></u>
         </p>
 
@@ -78,3 +83,4 @@ $(`<center>
 $("#design-a").click(function(){
   $("#spanan").slideToggle(function(){});
 });
+
