@@ -24,13 +24,13 @@ $(`<center>
 
         <p style="color: #e67e22;">
           <div style="float: right; padding-right: 20px;">- 1</div>
-          اشترك ادمن ذهبي 800ريال لمدة شهرين
+          اشترك ادمن ذهبي 800ريال لمدة شهرين واحصل ادمن اسود
           <img src="https://www.njd.chat/sico/zvCFi1N2kj.gif">
         </p>
 
         <p style="color: #2ecc71;">
           <div style="float: right; padding-right: 20px;">- 2</div>
-          اشترك ادمن اسود 550ريال لمدة شهرين
+          اشترك ادمن اسود 550ريال لمدة شهرين واحصل تاج ذهبي
           <img src="https://www.njd.chat/sico/zvqhLTljtX.gif">
         </p>
 
@@ -83,5 +83,4 @@ $(`<center>
 $("#design-a").click(function(){
   $("#spanan").slideToggle(function(){});
 });
-
 
